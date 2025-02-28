@@ -1,0 +1,111 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/*login*/
+.headline {
+  margin: 0 0 21px;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 25px;
+  width: 75%;
+  color: #000000;
+}
+
+.login-text {
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  width: 75%;
+  color: #000000;
+}
+
+.loginerror {
+  display: none;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FF0000;
+}
+
+.labelstyle {
+  margin: 0 0.2px 1px 0.2px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+
+.login-nav {
+  margin: 0 10px;
+  text-align: center;
+  overflow-wrap: break-word;
+  //font-weight: 400;
+  //font-size: 12px;
+  text-decoration-line: underline;
+  color: #000000;
+  &:active{
+    color: #0046a0;
+  }
+}
+
+/*env*/
+.userinfo {
+  //align-self: flex-start;
+  font-size: 12px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  padding: 10px;
+  margin: 4.5px 2px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex: none;
+  color: #d9d9d9;
+
+}
+
+.logout {
+  margin: 4.5px 2px;
+  overflow-wrap: break-word;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px;
+  text-decoration-line: underline;
+  color: #FF0000;
+  flex: none;
+  &:active{
+    color: #ff8888;
+  }
+}
+
+.elementname {
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+.exitgame {
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  justify-content: center;
+}
+
+.smallsize {
+  @include media-breakpoint-only(xs){
+    font-weight: 600;
+    font-size: x-small;
+  }
+  @media (max-aspect-ratio: 3/4) {
+    @include media-breakpoint-up(sm) {
+      font-weight: 400;
+      font-size: medium;
+    }
+  }
+}

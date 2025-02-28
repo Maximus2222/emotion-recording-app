@@ -1,0 +1,14 @@
+services:
+  mongodb:
+    image: harbor.informatik.fh-nuernberg.de/weberma/mongo:7.0
+
+  service:
+    image: harbor.informatik.fh-nuernberg.de/weberma/mongodb-panache-quickstart
+
+    environment:
+      - quarkus.mongodb.connection-string=mongodb://mongodb:27017
+
+  webapp:
+    image: harbor.informatik.fh-nuernberg.de/weberma/user-interface
+    ports:
+      - 8888:80
